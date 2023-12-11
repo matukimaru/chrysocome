@@ -1,7 +1,8 @@
 <template>
   <div>
     <p>Hello!</p>
-    <p>This is managed with CI/CD: Github -> CircleCI -> Netlify</p>
+    <p></p>
+    <p>Github -> CircleCI -> Netlify</p>
   </div>
 </template>
 
