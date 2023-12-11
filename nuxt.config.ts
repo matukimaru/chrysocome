@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [['@nuxtjs/eslint-module', {/* module options */}], '@pinia/nuxt', '@nuxt/ui', '@nuxtjs/tailwindcss', 'nuxt-vitest']
+  modules: [['@nuxtjs/eslint-module', {/* module options */}], '@pinia/nuxt', '@nuxt/ui', '@nuxtjs/tailwindcss']
 })
