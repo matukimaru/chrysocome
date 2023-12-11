@@ -28,7 +28,14 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Deploy to netlify
+          name: project build
+          command: pnpm run generate
+      - save_cache:
+          key: nuxt3-public-cache-{{ .Branch }}
+          paths:
+            - ./.output/public
+      - run:
+          name: deploy to netlify
           command: |
             ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=./.output/public
 
